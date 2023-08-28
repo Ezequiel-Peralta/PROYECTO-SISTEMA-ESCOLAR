@@ -1,0 +1,28 @@
+.number{
+    border-radius: 0.5rem;
+    font-weight:bold;
+    cursor: pointer;
+    font-size: 1.2rem;
+    background-color: white;
+    box-sizing: border-box;
+    color: rgba(128, 0, 0);
+    width:80px;
+    height: 27px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 1.8px;
+}
+.number:hover{
+    width:85px;
+    height:32px;
+}
+.div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(128, 0, 0, 0.5);
+    width: 101%;
+}
+.li{
+    display: inline;
+}
+

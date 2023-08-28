@@ -1,0 +1,41 @@
+.divbody {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 137vh;
+    background-image: url("../Home/background-image.png");
+}
+.divcontainer {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: #0c0c0ee7;
+    background-blend-mode: soft-light;
+    background-attachment: fixed;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.divcontainer .contenido {
+    flex: 1;
+}
+
+.divcontainer .contenido h1 {
+    color: white;
+    text-transform: uppercase;
+    line-height: 50px;
+    width: 100%;
+    margin: 190px 0 40px 0;
+    font-family: Verdana, Segoe, sans-serif;
+    word-spacing: 8px;
+    font-size: 40px;
+}
+
+.divcontainer .contenido p {
+    width: 50%;
+    margin: 0 0 0 25%;
+    color: white;
+}
