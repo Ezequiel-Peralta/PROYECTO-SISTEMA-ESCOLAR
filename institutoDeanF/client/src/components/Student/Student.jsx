@@ -14,6 +14,7 @@ const Student =()=>{
                     <Link to="/register"><button>Registrar</button></Link>
                     <Link to="/modify"><button>Modificar</button></Link>
                     <Link to="/students"><button>Total</button></Link>
+                    <Link to="/grades"><button>Notas</button></Link>
                 </div>
             </div>
             <FooterPag/>

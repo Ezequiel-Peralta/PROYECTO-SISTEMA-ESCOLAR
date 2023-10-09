@@ -26,7 +26,8 @@ try {
         ...auxstudent.toJSON(),
         EscolarCycle: escolarCycleData,
       };
-      // se agrega el objeto EscolarCycle al objeto updatedStudent utilizando la desestructuración y la asignación de propiedades (...auxstudent.toJSON() clona las propiedades existentes del estudiante y luego se agrega EscolarCycle: escolarCycleData para incluir los datos de EscolarCycle). De esta manera, en el objeto updatedStudent se mostrarán tanto los datos del estudiante como los datos completos de EscolarCycle.
+      // se agrega el objeto EscolarCycle al objeto updatedStudent utilizando la desestructuración y la asignación de propiedades 
+      //(...auxstudent.toJSON() clona las propiedades existentes del estudiante y luego se agrega EscolarCycle: escolarCycleData para incluir los datos de EscolarCycle). De esta manera, en el objeto updatedStudent se mostrarán tanto los datos del estudiante como los datos completos de EscolarCycle.
 
 
 return (updatedStudent)

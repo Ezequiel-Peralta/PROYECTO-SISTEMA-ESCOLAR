@@ -48,6 +48,8 @@ return(
         </div>
         <div className={style.buttomDiv}>
             <Link to="/students"><button className={style.butom}>VOLVER</button></Link>
+            <Link to="/modify"><button className={style.butom}>MODIFICAR</button></Link>
+            <Link to="/loadGrades"><button className={style.butom}>CARGAR NOTAS</button></Link>
         </div>
         <FooterPag/>
     </div>

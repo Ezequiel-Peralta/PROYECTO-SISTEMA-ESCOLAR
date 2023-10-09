@@ -1,4 +1,4 @@
-const {Student,EscolarCycle,Subject,Attendance}= require ("../../db")
+const {Student,EscolarCycle,Attendance,SchoolGrades}= require ("../../db")
 const studentData = require("../../../Data.js")
 
 
@@ -20,8 +20,10 @@ const getAllStudent= async()=>{
     const student = await Student.findAll({
         include: [
             {
-              model: Subject,
-            },
+               model: SchoolGrades,
+               through: "SchoolGradesStudent",
+               attributes:["grades","recovery","finalGrades","nameSubject"]
+             },
             {
               model: EscolarCycle,
               as: 'EscolarCycle',

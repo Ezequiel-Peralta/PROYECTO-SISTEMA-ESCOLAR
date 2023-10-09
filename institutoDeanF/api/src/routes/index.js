@@ -17,8 +17,8 @@ const {postStaffTeacherHandler}=require("../handler/StaffTeacher/postStaffTeache
 const {putStaffHandler}= require("../handler/StaffTeacher/putStaffHandler")
 const {getStaffByNameHandler}=require("../handler/StaffTeacher/getStaffByNameHandler")
 const {putStaffBannedHandler}= require("../handler/StaffTeacher/putStaffBannedHandler")
-
-
+const {getAllSchoolGradesHandler} = require("../handler/SchoolGrades/getAllSchoolGradesHandler")
+const {newSchoolGrades} = require("../handler/SchoolGrades/newSchoolGrades")
 //student
 router.get("/student",getAllStudentHandler)
 router.post("/student",newStudentHandler)
@@ -26,6 +26,11 @@ router.get("/student/:name",getByNameHandler)
 router.get("/student/student/:id",getStudentsByIdHandler)
 router.put("/student",putStudentHandler)
 router.get("/ids",getALLidHandler)
+
+//schoolgrades
+router.get("/allGrades",getAllSchoolGradesHandler)
+router.post("/newGrades",newSchoolGrades)
+
 //Subject
 router.get("/subject",getAllSubjectHandler)
 router.post("/subject",newSubjectHandler)

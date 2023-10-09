@@ -13,11 +13,18 @@ module.exports = (sequelize) => {
     },
     grades: {
       type:  DataTypes.ARRAY(DataTypes.INTEGER),
-      allowNull: false,
+     
+    },
+    recovery:{
+      type:  DataTypes.ARRAY(DataTypes.INTEGER),
+      defaultValue:null
     },
     finalGrades:{
       type: DataTypes.INTEGER,
-      allowNull: false,
+      defaultValue:null
+    },
+    nameSubject:{
+      type:DataTypes.ARRAY(DataTypes.STRING),
     }
   }, {
     timestamps: false,

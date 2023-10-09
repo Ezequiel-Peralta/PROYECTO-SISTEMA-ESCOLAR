@@ -50,7 +50,7 @@ const ModifyStudent = () => {
   };
   useEffect(async()=>{
     const users = await axios.get("http://localhost:3001/staff") 
-    const data=users.data
+    const data=users.data 
     setUser(data)
   },[])
   const changeHandlerUser =(e)=>{
@@ -185,6 +185,7 @@ const ModifyStudent = () => {
               </div>
 
           <Link to="student"><button className={style.buttomSend}>VOLVER</button></Link>
+          
           </div>
           <FooterPag/>
           
