@@ -4,6 +4,10 @@
     width: 6rem;
     background: radial-gradient(rgb(198, 65, 65), rgb(228, 221, 221));
    margin-left: 1rem;
+   justify-content: center;
+   display: flex;
+   align-items: center;
+   text-align: center;
 }
 .butom:hover{
     transition: all 300ms;
@@ -11,4 +15,8 @@
     width: 6.3rem;
     background: radial-gradient( rgb(228, 221, 221), rgb(198, 65, 65));
    
+}
+.divButomCargar{
+    justify-content: center;
+   display: flex;
 }

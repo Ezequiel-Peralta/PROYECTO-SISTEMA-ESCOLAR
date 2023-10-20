@@ -14,7 +14,7 @@ const CardStudent=({id,name,lastName,dni,birthDate,image})=>{
                     </Link>
                     <h3><span>Apellido:</span> {lastName}</h3>
                     <h3><span>DNI:</span> {dni}</h3>
-                    <h3><span>Fecha de nacimiento:</span> {birthDate}</h3>
+                    <h3><span>Fecha de nacimiento:</span>{birthDate}</h3>
                 </div>
             </div>
     )

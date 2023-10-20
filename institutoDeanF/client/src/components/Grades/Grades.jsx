@@ -32,36 +32,19 @@ const Grades = () => {
 
 
   const searchName = () => {
-   // console.log(student[2].name.toLowerCase(),"holaa");
-    //console.log(studentName.name.toLowerCase(),"studentName");
    let studentsNames=[]
    for (let i = 0; i < student.length; i++) {
-    
     if(student[i].name.toLowerCase()===studentName.name.toLowerCase()){
         studentsNames.push(student[i])
-    }
-
-   }  
-  //console.log(studentsNames,"esto es studentsNames");
+    }}  
   setStudentFilter(studentsNames)
+  }
 
-//   studentsNames.map((el)=>{
-//     return(
-//         <CardStudent
-//         key={el.id}
-//         Apellido={el.lastName}
-//         Nombre={el.name}
-//         />
-//         )
-// })
 
-console.log(studentsNames,"esto es vstudentFilter");
-
-  };
 
 
   return (
-    <div>
+    <div >
       <Link to="/">
         <button className={style.butom}>Home</button>
       </Link>
@@ -92,7 +75,9 @@ studentFilter?.map((el)=>{
         image={el.image}
         
         />,
-        <div><button className={style.butom}>Cargar</button></div>
+        <Link to={`loadGrades/${el.id}`}>
+        <div className={style.divButomCargar}><button className={style.butom}>Cargar</button></div>
+        </Link>
         </div>
         )
         

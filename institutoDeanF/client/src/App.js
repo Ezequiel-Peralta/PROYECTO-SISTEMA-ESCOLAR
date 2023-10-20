@@ -19,7 +19,8 @@ import EditUser from "./components/Administrator/EditarUsuario/EditUser"
 import Banned from "./components/Administrator/Banned/Banned";
 import NavBar from "./components/Nav/NavBar";
 import AllUser from "./components/Administrator/AllUser/AllUser";
-import LoadStudentData from "./components/LoadStudentData/LoadStudentData";
+import ErrorPago from "./components/Pagos/ErrorPago";
+import LoadGrades from "./components/Grades/LoadGrades";
 
 
 
@@ -71,7 +72,8 @@ function App() {
          <Route exact path = "/editar" render={()=><EditUser/>}></Route> 
          <Route exact path="/banned" render={()=><Banned/>} /> 
           <Route exact path="/alluser" render={()=><AllUser/>} /> 
-      <Route exact path="/loadGrades" render={()=><LoadStudentData/>}></Route>
+      <Route exact path="/loadGrades/:id" render={()=><LoadGrades/>}></Route>
+      <Route path="errorPago" render={()=><ErrorPago/>}></Route>
           
       </Switch>
     </div>
