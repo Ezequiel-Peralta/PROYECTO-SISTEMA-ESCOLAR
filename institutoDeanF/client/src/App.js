@@ -73,7 +73,7 @@ function App() {
          <Route exact path="/banned" render={()=><Banned/>} /> 
           <Route exact path="/alluser" render={()=><AllUser/>} /> 
       <Route exact path="/loadGrades/:id" render={()=><LoadGrades/>}></Route>
-      <Route path="errorPago" render={()=><ErrorPago/>}></Route>
+      <Route path="/errorPago" render={()=><ErrorPago/>}></Route>
           
       </Switch>
     </div>

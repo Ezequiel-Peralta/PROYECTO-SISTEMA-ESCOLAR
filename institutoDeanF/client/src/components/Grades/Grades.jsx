@@ -5,7 +5,7 @@ import { getAllStudents } from "../../Redux/actions";
 import { useDispatch } from "react-redux";
 import axios from "axios";
 import CardStudent from "../CardStudent/CardStudent";
-
+import FooterPag from "../Footer/FooterPag";
 
 const Grades = () => {
   const [student, setStudent] = useState();
@@ -44,11 +44,9 @@ const Grades = () => {
 
 
   return (
-    <div >
-      <Link to="/">
-        <button className={style.butom}>Home</button>
-      </Link>
-      <h1>Cargar notas </h1>
+    <div className={style.divbody}>
+      <div className={style.divcontainer}>
+      <h1 className={style.title}>Cargar notas</h1>
       <div>
         <label htmlFor="name">Ingrese el nombre</label>
         <input
@@ -57,7 +55,12 @@ const Grades = () => {
           name="name"
           onChange={changeHandler}
         />
-        <button onClick={() => searchName(studentName)} className={style.butom}>Buscar</button>
+        <div className={style.divBtnContainer}>
+          <button onClick={() => searchName(studentName)} className={style.butom}>Buscar</button>
+          <Link to="/student">
+            <button className={style.butom}>Volver</button>
+          </Link>
+        </div>
       </div>
 
       <div>
@@ -83,9 +86,9 @@ studentFilter?.map((el)=>{
         
       } )
 }
-     
-
       </div>
+      </div>
+      <FooterPag />
     </div>
   );
 };
